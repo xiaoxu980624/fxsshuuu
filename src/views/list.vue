@@ -41,8 +41,13 @@
          
         </van-grid>
         <div class="img_list">
-            <div class="shu_list"></div>
-            <h1>全屋装修</h1>
+            <div class="shu_list">
+            </div>
+             <div class="shu_list2">
+               <p>全屋装修</p>
+               <span>包设计、包主材、包水电、包施工</span>
+              
+            </div>
         </div>
     </div>
 </template>
@@ -169,10 +174,11 @@ span {
     position: relative;
     width: 100%;
     height: 300px;
-    background: red;
+    /* background: red; */
     margin-top: 18px;
 }
 .shu_list{
+  /* display: flex; */
     position: absolute;
     top: 32px;
     left: 20px;
@@ -181,4 +187,18 @@ span {
     background:#39c894;
     padding-top: 32px;
 }
+.shu_list2{
+  display:flex;
+  position: absolute;
+   top: 32px;
+    left: 30px;
+    width: 350px;
+    height: 60px;
+    /* background:yellow; */
+    padding-top: 32px;
+    text-align: center;
+}
+p{
+  font-size: 20px;
+};
 </style>
