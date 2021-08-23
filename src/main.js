@@ -10,6 +10,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+{/* <link rel="stylesheet" type="text/css" href="./iconfont.css"></link> */}
 
 
 // axios依赖的配置
