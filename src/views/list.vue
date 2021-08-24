@@ -41,13 +41,19 @@
          
         </van-grid>
         <div class="img_list">
-            <div class="shu_list">
-            </div>
              <div class="shu_list2">
-               <p>全屋装修</p>
-               <span>包设计、包主材、包水电、包施工</span>
+               <div class="shu_list">
+                <p>全屋装修 <span>包设计、包主材、包水电、包施工</span></p>
+                
+            </div>
               
             </div>
+            <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+              <van-swipe-item>1</van-swipe-item>
+              <van-swipe-item>2</van-swipe-item>
+              <van-swipe-item>3</van-swipe-item>
+              <van-swipe-item>4</van-swipe-item>
+            </van-swipe>
         </div>
     </div>
 </template>
@@ -61,42 +67,42 @@ export default {
         {
           name: "装修方案",
           icon: " iconfont icon-case",
-          color:"#39c894"
+          color: "#39c894"
         },
         {
           name: "效果图",
           icon: "iconfont icon-case",
-          color:"#feb505"
+          color: "#feb505"
         },
         {
           name: "设计师",
           icon: "iconfont icon-designer",
-          color:"#eed215"
+          color: "#eed215"
         },
         {
           name: "装修工地",
           icon: "iconfont icon-construction-site",
-          color:"#00b2b2"
+          color: "#00b2b2"
         },
         {
           name: "装修攻略",
           icon: "iconfont icon-case",
-          color:"#1b9af7"
+          color: "#1b9af7"
         },
         {
           name: "装修贷款",
           icon: "iconfont icon-loans",
-          color:"#7b72e9"
+          color: "#7b72e9"
         },
         {
           name: "免费预约",
           icon: "iconfont icon-case",
-          color:"#ff4351"
+          color: "#ff4351"
         },
         {
           name: "装修方案",
           icon: "iconfont icon-case ",
-          color:"#fe8864"
+          color: "#fe8864"
         }
       ]
     };
@@ -156,49 +162,49 @@ span {
   width: 100%;
   height: 100%;
 }
-.gong_span{
+.gong_span {
   /* display: flex; */
   width: 80px;
   height: 80px;
   border-radius: 50%;
   /* margin-left: 70px; */
 }
-#i{
-   font-size: 60px;
-   /* text-align: center; */
-   line-height: 80px;
-   color: white;
-   margin-left: 10px;
+#i {
+  font-size: 60px;
+  /* text-align: center; */
+  line-height: 80px;
+  color: white;
+  margin-left: 10px;
 }
-.img_list{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    /* background: red; */
-    margin-top: 18px;
+.img_list {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  /* background: red; */
+  margin-top: 18px;
 }
-.shu_list{
-  /* display: flex; */
-    position: absolute;
-    top: 32px;
-    left: 20px;
-    width: 5px;
-    height: 42px;
-    background:#39c894;
-    padding-top: 32px;
-}
-.shu_list2{
-  display:flex;
+
+.shu_list2 {
+  display: flex;
   position: absolute;
-   top: 32px;
-    left: 30px;
-    width: 350px;
-    height: 60px;
-    /* background:yellow; */
-    padding-top: 32px;
-    text-align: center;
+  top: 32px;
+  left: 25px;
+  width: 100%;
+  height: 100px;
+  /* background:yellow; */
+  /* line-height: 100px; */
+
+  padding-top: 32px;
+  text-align: center;
 }
-p{
+p {
   font-size: 20px;
-};
+}
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #39a9ed;
+}
 </style>
